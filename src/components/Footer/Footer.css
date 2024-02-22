@@ -1,0 +1,428 @@
+.site-footer {
+  /*background: url(./component/images/site-footer-bg.jpg);*/
+  position: relative;
+  display: block;
+  z-index: 1;
+  background-color: rgb(60, 77, 60);
+  background-size: cover;
+}
+.site-footer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: #000;
+  opacity: 0.05;
+  z-index: -1;
+}
+/*footer-top*/
+.site-footer__top {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba(#ffff, 0.1);
+}
+.site-footer__top-inner {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 42px 0;
+}
+.site-footer__top-logo {
+  position: relative;
+  display: inline-block;
+}
+.site-footer__top-right {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.site-footer__top-right-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.site-footer__social {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.site-footer__social:before {
+  position: absolute;
+  top: -25px;
+  bottom: -24px;
+  left: -50px;
+  content: "";
+  background-color: rgba(#ffffff, 0.1);
+  width: 1px;
+}
+
+.site-footer__social a {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffff;
+  font-size: 18px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 1;
+}
+.site-footer__social a:hover {
+  color: rgb(222, 222, 70);
+}
+
+.site-footer__social a + a {
+  margin-left: 35px;
+}
+/* End-footer-top*/
+/* footer-middle*/
+.site-footer__middle {
+  position: relative;
+  display: block;
+  padding: 96px 0 108px;
+}
+
+.footer-widget__about {
+  position: relative;
+  display: block;
+  margin-right: 70px;
+}
+
+.footer-widget__about-text-box {
+  position: relative;
+  display: block;
+  margin-top: -3px;
+}
+
+.footer-widget__about-text {
+  color: #a5b9ad;
+  line-height: 34px;
+  margin: 0;
+}
+
+.footer-widget__newsletter-form {
+  position: relative;
+  display: block;
+  margin-top: 21px;
+}
+
+.footer-widget__newsletter-input-box {
+  position: relative;
+  display: block;
+}
+.footer-widget__newsletter-input-box input[type="email"] {
+  height: 64px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 80px;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-widget__newsletter-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(61, 85, 61);
+  border: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  padding: 0;
+  font-size: 16px;
+}
+
+.footer-widget__links {
+  position: relative;
+  display: block;
+}
+
+.footer-widget__title {
+  font-size: 34px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  color: #ffffff;
+  line-height: 34px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  padding: 28px;
+}
+
+.footer-widget__links-list {
+  position: relative;
+  display: block;
+  margin-top: -1px;
+}
+
+.footer-widget__links-list li + li {
+  margin-top: 3px;
+}
+
+.footer-widget__links-list li a {
+  position: relative;
+  font-size: 16px;
+  color: #a5b9ad;
+  font-weight: 500;
+  padding-left: 21px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+.footer-widget__links-list i {
+  color: #ecdd5e;
+}
+.footer-widget__links-list i:hover {
+  color: #ffffff;
+}
+
+.footer-widget__links-list li a:hover {
+  color: #ffffff;
+}
+
+.footer-widget__links-list li a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 11px;
+  color: #ecdd5e;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footer-widget__links-list li a:hover:before {
+  color: #ffffff;
+}
+
+.footer-widget__services {
+  position: relative;
+  display: block;
+  margin-right: 60px;
+}
+
+.footer-widget__services-list {
+  position: relative;
+  display: block;
+}
+
+.footer-widget__services-list li + li {
+  margin-top: 3px;
+}
+
+.footer-widget__services-list li a {
+  position: relative;
+  font-size: 16px;
+  color: #a5b9ad;
+  font-weight: 500;
+  padding-left: 21px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.footer-widget__services-list li i {
+  color: #ecdd5e;
+}
+
+.footer-widget__services-list li i:hover {
+  color: #ffffff;
+}
+
+.footer-widget__services-list li a:hover {
+  color: #ffffff;
+}
+
+.footer-widget__services-list li a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 11px;
+  color: #ecdd5e;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footer-widget__services-list li a:hover:before {
+  color: #ffffff;
+}
+
+.footer-widget__contact {
+  position: relative;
+  display: block;
+}
+
+.footer-widget__contact-text {
+  color: #b0baae;
+  line-height: 28px;
+}
+
+.footer-widget__contact-info {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-widget__contact-icon {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-widget__contact-icon span {
+  font-size: 34px;
+  color: #ecdd5e;
+}
+
+.footer-widget__contact-content {
+  margin-left: 13px;
+}
+
+.footer-widget__contact-mail-phone {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-widget__contact-mail {
+  color: #ffffff;
+  display: block;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.footer-widget__contact-mail:hover {
+  color: #ecdd5e;
+}
+
+.footer-widget__contact-phone {
+  color: #ffffff;
+  display: block;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.footer-widget__contact-phone:hover {
+  color: #ecdd5e;
+}
+/* End-footer-middle*/
+/* footer-bottom*/
+.site-footer__bottom {
+  position: relative;
+  display: block;
+  background-color: #353e32;
+}
+
+.site-footer-bottom-shape {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16px;
+  z-index: 5;
+}
+
+.site-footer__bottom-inner {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.site-footer__bottom-text {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: #b0baae;
+  font-weight: 500;
+  margin: 0;
+}
+
+.site-footer__bottom-text a {
+  color: #b0baae;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.site-footer__bottom-text a:hover {
+  color: #ffffff;
+}
+/* End-footer-bottom*/
+
+/* mobil */
+@media (max-width: 767px) {
+  .site-footer__top-inner {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .site-footer__top-right {
+    display: block;
+    text-align: center;
+  }
+}
+/* small screan */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-footer__top-inner {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .site-footer__top-right {
+    display: block;
+    text-align: center;
+  }
+  .site-footer__social {
+    text-align: center;
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

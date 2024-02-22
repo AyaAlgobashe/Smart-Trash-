@@ -1,0 +1,160 @@
+:root{
+    --transfcolor:rgba(247, 239, 239, 0.61);
+    --fontfamily: 'Edu VIC WA NT Beginner', cursive;
+    --primerycolor:rgb(51, 124, 43);
+    --maincolor: rgb(23, 48, 23);
+    --seccolor: #001508;
+    --ylow:#fad324;
+    --gray:rgba(122, 117, 117);
+}
+
+/* mobil */
+
+@media (max-width:767px){
+    .mainOpinion .opinion{
+        height:700px ;
+    }
+    .opinion .left-side{
+        margin-top: 4%;
+    
+    
+    }
+    .opinion .left-side p{
+    font-size: 13px;
+    text-align: center;
+    margin-left: 20px;
+
+
+    }
+    .opinion .left-side h2{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 10px;
+        margin-left: 20px;
+
+    
+    }
+    .info{
+        font-size: 15px;
+    }
+    .buton .person p{
+        font-size: 13px;
+        
+    }
+    .buton .person h6{
+        font-size: 15px;
+        
+    }
+    .buton i{
+        display: none;
+    }
+    .buton .phot{
+        width: 50px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    
+    .right-side .borde .par-left{
+        font-size: 13px;
+    }
+
+}
+/* small screan */
+
+@media (min-width:768px) and (max-width:991px){
+    .mainOpinion .opinion{
+        height:800px ;
+    }
+
+}
+.mainOpinion{
+    background-color: var(--seccolor);
+}
+.opinion{
+    padding: 50px 50px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    height: 500px;
+    /* background-image: url(https://templatekit.jegtheme.com/wastco/wp-content/uploads/sites/280/2022/05/world.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.18;
+    mix-blend-mode: multiply; */
+
+
+}
+.left-side{
+    margin-top: 15%;
+
+
+}
+.left-side p{
+color: var(--ylow);
+font-size: 18px;
+}
+.left-side h2{
+    color:#FFFFFF;
+    font-size: 35px;
+    padding-bottom: 10px;
+
+}
+.left-side .info{
+    color: var(--transfcolor);
+    font-weight: 600;
+    font-size: 16px;
+    width: 83%;
+}
+.right-side{
+    border-radius: 10px;
+    background-color:#FFFFFF;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.1);
+    border-width: 0px 0px 5px 0px;
+    border-color: var(--ylow);
+    border-style: solid;
+    padding: 30px;
+    margin-top: 10%;
+
+
+}
+
+.borde .par-left{
+    color:var(--gray);
+    font-style: italic;
+    font-size: 20px;
+
+
+}
+.buton{
+    padding-top: 30px;
+}
+.buton h6{
+    font-size: 15px;
+    color: var(--seccolor);
+}
+.buton p{
+    color:var(--gray);
+    font-size: 15px;
+}
+.buton i{
+    color: rgb(226, 185, 185);
+    font-size: 50px;
+    margin-right: 50px;
+}
+.buton.qou{
+    padding-bottom: 40px;
+}
+.buton .person{
+    margin-top: 15px;
+}
+.buton .phot{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #fad324;
+}
+

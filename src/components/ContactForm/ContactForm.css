@@ -1,0 +1,282 @@
+/* contact-page left*/
+.contact-page {
+  position: relative;
+  display: block;
+  padding: 0 0 120px;
+}
+
+.contact-left {
+  position: relative;
+  display: block;
+  /* margin-right: 127px; */
+}
+
+.section-title {
+  margin-top: -11px;
+  margin-bottom: 46px;
+}
+.contact-left .section-title {
+  margin-bottom: 26px;
+}
+
+.title-contact {
+  position: relative;
+  display: inline-block;
+  color: #558e4c;
+  font-size: 20px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-top: 150px;
+  margin-inline-start: 100px;
+}
+
+.title-contact::before {
+  position: absolute;
+  top: 15px;
+  right: -29px;
+  background-color: #ecdd5e;
+  width: 20px;
+  height: 2px;
+  content: "";
+}
+
+.title-head {
+  color: #404a3d;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  margin-inline-start: 100px;
+}
+
+.text {
+  font-family: "DM Sans", sans-serif;
+  color: #878986;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-inline-start: 100px;
+}
+/* contact-page-left End */
+/* contact-info */
+.contact-info {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  margin-inline-start: 50px;
+}
+
+.contact-info li {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-info li + li {
+  margin-top: 10px;
+}
+
+.contact-info li .icon {
+  height: 80px;
+  width: 80px;
+  background-color: #558e4c;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.contact-info li:hover .icon {
+  background-color: #ecdd5e;
+}
+
+.contact-info li .icon span {
+  color: #ecdd5e;
+  font-size: 30px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.contact-info li:hover .icon span {
+  color: #404a3d;
+}
+
+.contact-info li .text {
+  margin-left: 30px;
+}
+
+.contact-info li .text p {
+  line-height: 25px;
+}
+
+.contact-info li .text a {
+  font-size: 18px;
+  color: #404a3d;
+  font-weight: 600;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.contact-info li:hover .text a {
+  color: #558e4c;
+}
+
+.contact-info li .text span {
+  font-size: 18px;
+  color: #404a3d;
+  font-weight: 600;
+}
+
+/* contact-info End */
+/* contact-page right*/
+
+.contact-right {
+  position: relative;
+  display: block;
+  margin-left: -20px;
+  margin-inline-start: 50px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-top: 150px;
+}
+
+.contact-form {
+  position: relative;
+  display: block;
+  padding: 59px;
+  border: 1px solid #ebe5dd;
+}
+
+.contact-form .row {
+  --bs-gutter-x: 20px;
+}
+
+.contact-form-input-box {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  /* width: 500px; */
+}
+
+.contact-form-input-box input[type="text"],
+.contact-form-input-box input[type="email"] {
+  height: 63px;
+  border: none;
+  outline: none;
+  background-color: #f5f0e9;
+  color: #878986;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: inherit;
+  width: 100%;
+  padding: 0 30px 0;
+  margin: 0;
+}
+
+.contact-form-input-box textarea {
+  height: 184px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f5f0e9;
+  font-size: 14px;
+  color: #878986;
+  font-weight: 500;
+  padding: 20px 40px 30px;
+}
+
+.contact-form-input-box .text-message-box {
+  height: 184px;
+}
+
+.contact-box {
+  border: 0;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none !important;
+  background-color: #ecdd5e;
+  color: #404a3d;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 25px 55px 25px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+}
+.button:hover {
+  background-color: #558e4c;
+  color: #f5f0e9;
+}
+/* contact-page End right*/
+@media (max-width: 767px) {
+  .contact-left {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .section-title {
+    display: block;
+  }
+  .text {
+    display: block;
+  }
+}
+/* small screan */
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .contact-info li {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .title-head {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .contact-left {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .section-title {
+    display: block;
+  }
+  .text {
+    display: block;
+  }
+  .text a {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-leftr {
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .section-title {
+    display: block;
+    text-align: left;
+  }
+  .text {
+    display: block;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

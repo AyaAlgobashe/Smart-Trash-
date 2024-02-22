@@ -1,0 +1,54 @@
+:root {
+    --transfcolor: rgba(247, 239, 239, 0.61);
+    --fontfamily: 'Brush Script MT', cursive;
+    --primerycolor: rgb(51, 124, 43);
+    --maincolor: rgb(23, 48, 23);
+    --seccolor: #001508;
+    --ylow: #fad324;
+    --gray: rgba(122, 117, 117);
+}
+
+.Second-header .back {
+    background-image: url(../../assets/images/Services/breadcrumb-1.jpg);
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left-center;
+    color: #fff;
+    height: 400px;
+}
+
+.secback {
+    background-color: rgba(34, 32, 32, 0.514);
+    height: 400px;
+}
+
+.collhead {
+    padding-top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.collhead h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.small {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: var(--fontfamily);
+    font-style: italic;
+}
+
+.small a {
+    text-decoration: none;
+    color: var(--ylow);
+    margin-top: 50px;
+}
+
+.small a:hover {
+    color: #fff;
+}

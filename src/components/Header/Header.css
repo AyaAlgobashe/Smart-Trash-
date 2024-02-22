@@ -1,0 +1,91 @@
+:root {
+    --wostin-font: "DM Sans", sans-serif;
+    --wostin-font-two: "Amatic SC", cursive;
+    --wostin-reey-font: "reeyregular";
+    --wostin-gray: #878986;
+    --wostin-gray-rgb: 135, 137, 134;
+    --wostin-white: #ffffff;
+    --wostin-white-rgb: 255, 255, 255;
+    --wostin-black: #404a3d;
+    --wostin-black-rgb: 64, 74, 61;
+    --wostin-base: #558e4c;
+    --wostin-base-rgb: 85, 142, 76;
+    --wostin-primary: #ecdd5e;
+    --wostin-primary-rgb: 236, 221, 94;
+    --wostin-extra: #f5f0e9;
+    --wostin-extra-rgb: 245, 240, 233;
+    --wostin-bdr-color: #ebe5dd;
+    --wostin-bdr-color-rgb: 235, 229, 221;
+}
+
+body {
+    font-family: var(--wostin-font);
+    /* color: var(--wostin-gray); */
+}
+
+.main-header__inner {
+    position: sticky;
+    display: block;
+    padding: 10px 60px;
+    top: 0;
+    z-index: 2000;
+    background: #fffffff5;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.main-header__logo {
+    position: relative;
+    display: flex;
+    float: left;
+    padding: 18px 0;
+}
+
+@media (max-width: 768px) {
+    .main-header__inner {
+        padding: 0 10px;
+        z-index: 100;
+    }
+    .mobile-nav__content {
+        background-color: var(--wostin-black);
+        z-index: 10;
+        position: relative;
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .background-watson {
+        background-color: var(--wostin-black);
+    }
+    .mobile-nav__container {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .border-buttom {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .ancor {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        line-height: 30px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: var(--wostin-font);
+        font-weight: 500;
+        height: 46px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: 500ms;
+        transition: 500ms;
+    }
+}

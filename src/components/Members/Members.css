@@ -1,0 +1,158 @@
+:root {
+  --transfcolor: rgba(216, 194, 194, 0.397);
+  --fontfamily: "Edu VIC WA NT Beginner", cursive;
+  --primerycolor: rgb(51, 124, 43);
+  --maincolor: rgb(23, 48, 23);
+  --trangreen: rgba(58, 75, 58, 0.8);
+  --seccolor: #001508;
+  --ylow: #fad324;
+  --gray: rgba(122, 117, 117);
+}
+@media (min-width: 992px) and(max-width:1200px) {
+  .member {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .MemberRow {
+    position: relative;
+    left: 7px;
+  }
+}
+.membHeader {
+  margin-bottom: 100px;
+}
+/* title Staff */
+.Staff {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  line-height: 1.2px;
+}
+.Staff p {
+  font-family: var(--fontfamily);
+  color: var(--primerycolor);
+  font-style: italic;
+  font-size: 20px;
+}
+.Staff h1 {
+  font-size: 50px;
+  color: var(--seccolor);
+  font-weight: bolder;
+}
+/* Member information */
+.member {
+  width: 350px;
+  transition: all 500ms linear;
+  transition-delay: 0.2s;
+}
+.membImag img {
+  width: 100%;
+  height: 450px;
+}
+.membImag {
+  position: relative;
+  width: 100%;
+}
+.membImag::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 450px;
+  background-color: var(--trangreen);
+  display: none;
+}
+.member:hover .membImag::after {
+  display: block;
+  bottom: 1px;
+  left: 0.3px;
+}
+.member:hover {
+  padding-bottom: 80px;
+}
+.member:hover .membImag {
+  transform: scale(1.1) rotate(0deg);
+  transition: all 500ms linear;
+  transition-delay: 0.1s;
+  width: 100%;
+}
+.infoMemb {
+  padding: 20px;
+}
+.infoMemb h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.infoMemb p {
+  font-family: var(--fontfamily);
+  color: var(--primerycolor);
+  font-style: italic;
+  font-size: 15px;
+}
+/* Hidden Member Box */
+.member .hiddInfo {
+  padding: 20px;
+  margin-left: -20px;
+  margin-top: -155px;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 10px 60px 60px 10px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  transform: perspective(400px) rotateX(90deg);
+  transform-origin: center;
+  transition: all 500ms linear;
+  transition-delay: 0.1s;
+  width: 389px;
+}
+.member:hover .hiddInfo {
+  transform: perspective(400px) rotateY(0deg);
+  transition: all 300ms linear;
+  transition-delay: 0.1s;
+}
+.hiddInfo p {
+  font-family: var(--fontfamily);
+  color: var(--primerycolor);
+  font-style: italic;
+  font-size: 15px;
+}
+.hiddInfo h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.hiddInfo .links {
+  margin-right: 15px;
+}
+.hiddInfo .links li {
+  text-transform: none;
+  display: inline-block;
+  padding: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--transfcolor);
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.hiddInfo .links a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--trangreen);
+  width: 50px;
+  height: 50px;
+  left: 1px;
+  top: -1px;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  transform: scale(0);
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+.hiddInfo .links a:hover::before {
+  transform: scaleX(1);
+}
+
+.hiddInfo .links i {
+  color: var(--maincolor);
+  font-size: 16px;
+  text-align: center;
+}

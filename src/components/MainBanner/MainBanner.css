@@ -1,0 +1,163 @@
+:root {
+  --transfcolor: rgba(195, 211, 211, 0.5);
+  --fontfamily: "Edu VIC WA NT Beginner", cursive;
+  --primerycolor: rgb(51, 124, 43);
+  --maincolor: rgb(23, 48, 23);
+  --ylow: #fad324;
+}
+
+/* mobil */
+@media (max-width: 767px) {
+  .head {
+    display: none;
+  }
+  .divide1 {
+    display: none;
+  }
+
+  .divide2 .linn2 {
+    display: none;
+  }
+  .images {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .left-sid .tit {
+    font-size: 34px;
+    width: 340px;
+    padding-right: 10px;
+  }
+  .left {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .left-sid .head1 {
+    font-size: 15px;
+  }
+  .left-sid p {
+    font-size: 8px;
+    width: 300px;
+  }
+}
+/* small screan */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .head {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+.main-header .back {
+  margin-top: 100px;
+  padding-bottom: 120px;
+}
+
+/* westo head */
+.head p {
+  color: var(--transfcolor);
+  font-size: 100px;
+  margin-top: 20px;
+  transform: rotate(-0.75turn);
+  letter-spacing: 50px;
+}
+
+/*2 Images*/
+.divide1 {
+  background-image: url("../../assets/images/about-style1__image-1.jpg");
+  width: 120px;
+  height: 600px;
+}
+.divide2 {
+  background-image: url("../../assets/images/about-style1__image-2.jpg");
+  width: 100%;
+  height: 600px;
+  margin-left: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Image border */
+.divide1 .linn1 {
+  width: 100px;
+  height: 550px;
+  border: 2.5px solid #fff;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.divide2 .linn2 {
+  /* width: 330px; */
+  height: 550px;
+  border: 2.5px solid #fff;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+/* left side */
+.head1 {
+  font-family: var(--fontfamily);
+  font-style: italic;
+  color: var(--primerycolor);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.03px;
+}
+.left-sid .left {
+  margin-left: 20px;
+  height: 500px;
+}
+.left-sid h1 {
+  margin-bottom: 20px;
+  color: var(--maincolor);
+  font-size: 45px;
+  font-weight: bolder;
+}
+.left-sid p {
+  color: rgb(143, 140, 140);
+  font-size: 17px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+/* Rating side */
+.rate {
+  padding-top: 10px;
+  font-size: 15px;
+}
+.rate h5 {
+  color: var(--maincolor);
+}
+.rate h6 {
+  color: rgb(143, 140, 140);
+}
+.out {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.recycl {
+  height: 10px;
+  background-color: #cfc9c9;
+  border-radius: 10px;
+}
+.inner {
+  background-color: var(--ylow);
+  width: 77%;
+  height: 10px;
+  border-radius: 10px;
+}
+.inner2 {
+  background-color: var(--ylow);
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+}
+/* end rating */
+
+.check {
+  margin-top: 5px;
+}
+.check i {
+  padding-right: 20px;
+  color: var(--ylow);
+  font-size: 17px;
+}

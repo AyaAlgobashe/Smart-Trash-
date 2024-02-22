@@ -1,0 +1,262 @@
+:root {
+  --wostin-font: "DM Sans", sans-serif;
+  --wostin-font-two: "Amatic SC", cursive;
+  --wostin-reey-font: "reeyregular";
+  --wostin-gray: #878986;
+  --wostin-gray-rgb: 135, 137, 134;
+  --wostin-white: #ffffff;
+  --wostin-white-rgb: 255, 255, 255;
+  --wostin-black: #404a3d;
+  --wostin-black-rgb: 64, 74, 61;
+  --wostin-base: #558e4c;
+  --wostin-base-rgb: 85, 142, 76;
+  --wostin-primary: #ecdd5e;
+  --wostin-primary-rgb: 236, 221, 94;
+  --wostin-extra: #f5f0e9;
+  --wostin-extra-rgb: 245, 240, 233;
+  --wostin-bdr-color: #ebe5dd;
+  --wostin-bdr-color-rgb: 235, 229, 221;
+}
+.bg-3 {
+  background: url(../../assets/images/main-slider-3-bg.jpg);
+}
+.main-slider-three .swiper-slide {
+  position: relative;
+  background-color: var(--wostin-base);
+}
+.main-slider-three-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--wostin-base);
+  z-index: 3;
+}
+.main-slider-three-bg-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 84px;
+  background-color: var(--wostin-primary);
+  z-index: 3;
+}
+.main-slider-three-building {
+  position: absolute;
+  bottom: 84px;
+  right: 0;
+  z-index: 9;
+}
+.main-slider-three {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+.main-slider-three .swiper-slide {
+  position: relative;
+  background-color: var(--wostin-base);
+}
+
+.main-slider-three-bg-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 84px;
+  background-color: var(--wostin-primary);
+  z-index: 3;
+}
+.main-slider-three-building {
+  position: absolute;
+  bottom: 84px;
+  right: 0;
+  z-index: 9;
+}
+.main-slider-three-building img {
+  width: auto;
+}
+.main-slider-three-car {
+  position: absolute;
+  bottom: 60px;
+  right: 95px;
+  z-index: 10;
+  animation-name: example;
+  animation: example 3s ;
+  animation-iteration-count: infinite;
+  animation-direction: both;
+}
+
+@keyframes example {
+  0%   {  bottom:70px;}
+  50%  {  bottom:50px;}
+  100% {  bottom:70px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-slider-three-car {
+    right: 0;
+  }
+  .main-slider-three-car img {
+    width: 70%;
+  }
+}
+.main-slider-three .swiper-slide-active .main-slider-three-car {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition-delay: 3000ms;
+  transition-delay: 3000ms;
+  -webkit-transition: opacity 2000ms ease, color 500ms ease,
+    background 500ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, color 500ms ease, background 500ms ease,
+    -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+    background 500ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+    background 500ms ease, -webkit-transform 2000ms ease;
+}
+.float-bob-y {
+  -webkit-animation-name: float-bob-y;
+  animation-name: float-bob-y;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.main-slider-three-car img {
+  width: auto;
+}
+.main-slider .container {
+  position: relative;
+  padding-top: 211px;
+  padding-bottom: 260px;
+  z-index: 30;
+}
+.main-slider-three .container {
+  padding-top: 286px;
+  padding-bottom: 260px;
+}
+.main-slider-three .main-slider__content {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.main-slider h2 {
+  font-size: 120px;
+  color: var(--wostin-white);
+  font-weight: 700;
+  line-height: 110px;
+  margin-bottom: 43px;
+  -webkit-transform: translateY(-120px);
+  transform: translateY(-120px);
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+  -webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease,
+    -webkit-transform 2000ms ease;
+}
+.main-slider-three h2 {
+  font-size: 90px;
+  color: var(--wostin-white);
+  line-height: 90px;
+  margin-bottom: 35px;
+  font-family: var(--wostin-font);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateX(0);
+  transform: translateY(0) translateX(0);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-slider h2 {
+    font-size: 110px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-slider-three h2 {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+.main-slider .swiper-slide-active .thm-btn,
+.main-slider .swiper-slide-active h2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateX(0);
+  transform: translateY(0) translateX(0);
+}
+.main-slider-three .main-slider__content {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.thm-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  outline: none !important;
+  background-color: var(--wostin-primary);
+  color: var(--wostin-black);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 17px 50px 16px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  z-index: 1000;
+}
+.main-slider .thm-btn {
+  visibility: visible;
+  opacity: 1;
+  text-decoration: none;
+}
+.main-slider .thm-btn:hover {
+  background-color: var(--wostin-extra);
+}
+
+.main-slider .swiper-slide-active .thm-btn,
+.main-slider .swiper-slide-active h2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateX(0);
+  transform: translateY(0) translateX(0);
+
+}
+.thm-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--wostin-base);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 1;
+  z-index: -1;
+}
+.main-slider-three .thm-btn:after {
+  background-color: var(--wostin-white);
+}
+@media (max-width: 767px) {
+  .main-slider-three-car {
+    display: none;
+  }
+  .main-slider-three .container {
+    padding-top: 258px;
+    padding-bottom: 260px;
+  }
+  .main-slider-three h2 {
+    font-size: 39px;
+    line-height: 49px;
+}
+}
